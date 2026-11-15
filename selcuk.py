@@ -1,17 +1,4 @@
-import re
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
 
-headers = {"User-Agent": "Mozilla/5.0"}
-
-def find_active_domain(start=1825, end=1880):
-    for i in range(start, end+1):
-        url = f"https://www.selcuksportshd{i}.xyz/"
-        try:
-            req = Request(url, headers=headers)
-            html = urlopen(req, timeout=5).read().decode()
-
-            if "uxsyplayer" in html:
                 print(f"✅ Aktif domain bulundu: {url}")
                 return url, html
         except:
