@@ -1,18 +1,4 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="ATOMSPOR TV",BEIN SPORTS 1
-#EXTVLCOPT:http-referrer=https://www.atomsportv519.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2" group-title="ATOMSPOR TV",BEIN SPORTS 2
-#EXTVLCOPT:http-referrer=https://www.atomsportv519.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://css.d6e3eds5e065t5.help//b2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-3" tvg-name="BEIN SPORTS 3" group-title="ATOMSPOR TV",BEIN SPORTS 3
-#EXTVLCOPT:http-referrer=https://www.atomsportv519.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://css.d6e3eds5e065t5.help//b3/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" group-title="ATOMSPOR TV",BEIN SPORTS 4
-#EXTVLCOPT:http-referrer=https://www.atomsportv519.top
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://css.d6e3eds5e065t5.help//b4/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" group-title="ATOMSPOR TV",BEIN SPORTS 5
