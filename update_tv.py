@@ -1,13 +1,4 @@
-import requests
-import os
-import re
-import tempfile
-import shutil
-from datetime import datetime
-from urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
 
-def update_playlist():
     # Get M3U URL from environment variable
     m3u_url = os.getenv('TV_M3U_SOURCE_URL')
     if not m3u_url:
