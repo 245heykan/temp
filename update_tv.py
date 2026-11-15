@@ -29,20 +29,7 @@
         m3u_content = response.text
         
         # Write to the repository root
-        output_filename = "tv.m3u"
-        # Use the current working directory (repository root)
-        output_path = os.path.join(os.getcwd(), output_filename)
-        print(f"Writing to: {output_path}")
-        
-        # Write directly to the output file
-        try:
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(m3u_content)
-            
-            # Verify the file was written
-            if not os.path.exists(output_path):
-                raise Exception(f"Failed to create {output_filename}")
-                
+      
             file_size = os.path.getsize(output_path)
             if file_size == 0:
                 raise Exception(f"Created empty file {output_filename}")
