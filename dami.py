@@ -1,25 +1,4 @@
-import re
-import sys
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
-from urllib.parse import urljoin
-from playwright.sync_api import sync_playwright
 
-BASE_URL = "https://damitv.st"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-
-
-def get_events(page) -> list[dict]:
-    """Tarayıcı üzerinden API'ye gidip günün maçlarını çeker."""
-    api_url = urljoin(BASE_URL, "papi/matches/all-today")
-    print(f"📡 Maç listesi tarayıcı ile çekiliyor: {api_url}")
-
-    try:
-        page.goto(BASE_URL, timeout=20000, wait_until="domcontentloaded")
-        page.wait_for_timeout(2000)
-
-        api_data = page.evaluate(f"""async () => {{
-            const res = await fetch("{api_url}");
             return await res.json();
         }}""")
     except Exception as e:
