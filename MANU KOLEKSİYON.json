@@ -1,18 +1,4 @@
-[
-  {
-    "id": "collection-UGED6TEZ",
-    "title": "Keşfet",
-    "folders": [
-      {
-        "id": "folder-25429024",
-        "title": "Senin için",
-        "sources": [
-          {
-            "type": "movie",
-            "genre": "Filmler",
-            "addonId": "aio-metadata",
-            "provider": "addon",
-            "catalogId": "trakt.recommendations.movies",
+
             "id": "src-QB6PH93Z",
             "name": "Önerilen Filmler",
             "filters": {}
