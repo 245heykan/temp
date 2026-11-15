@@ -1,0 +1,38 @@
+name: XYZ M3U Guncelle
+
+on:
+  schedule:
+    - cron: '*/40 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-xyz:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Depoyu Cek
+        uses: actions/checkout@v4
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Gerekli Kutuphaneleri Yukle
+        run: |
+          pip install requests pycryptodome
+
+      - name: xyz.py Calistir
+        run: |
+          python xyz.py
+
+      - name: Degisiklikleri Repoya Kaydet
+        run: |
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Otomatik XYZ M3U guncellemesi" || echo "Degisiklik yok"
+          git push
